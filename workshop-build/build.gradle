@@ -1,0 +1,41 @@
+// Plugins: adicionam tasks prontas ao projeto.
+plugins {
+    id 'java'          // compile, test, jar, build...
+    id 'application'   // adiciona a task "run"
+}
+
+group = 'br.workshop'
+version = '1.0.0'
+
+// Onde o Gradle procura as bibliotecas (o mesmo Maven Central que o Maven usa).
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // TODO Atividade 3: adicione aqui a dependência do Gson (versão 2.11.0)
+    // usando a configuração "implementation".
+
+    // "testImplementation" equivale ao escopo "test" do Maven.
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+application {
+    mainClass = 'br.workshop.App'
+}
+
+// Sem esta linha o Gradle não usa o JUnit 5 para executar os testes.
+tasks.named('test') {
+    useJUnitPlatform()
+}
+
+// Garante acentos corretos na compilação.
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}

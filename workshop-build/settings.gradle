@@ -1,0 +1,2 @@
+// Mesmo nome do artifactId do Maven: o JAR sai como workshop-build-1.0.0.jar nas duas ferramentas.
+rootProject.name = 'workshop-build'

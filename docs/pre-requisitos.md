@@ -113,8 +113,4 @@ Se tudo funcionou, você está pronto. Nesse ponto o Maven já baixou suas depen
 | Download travado ou erro de SSL | Rede da faculdade/empresa com proxy | Tente por outra rede (ex.: celular) |
 | `mvn` não reconhecido | Maven fora do `Path` | Use `./mvnw` (wrapper) no lugar |
 
-## Não conseguiu?
-
-Não deixe para o dia do workshop. Envie ao professor ou aos monitores, com antecedência, o **texto completo do erro** (copie e cole do terminal) e a saída de `java -version`. Assim a gente resolve antes.
-
 Bom workshop!

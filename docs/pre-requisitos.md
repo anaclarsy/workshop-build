@@ -79,11 +79,9 @@ Usaremos para clonar o repositório template e, na tarefa de casa, para entregar
 ## 6. Clonar o repositório template
 
 ```
-git clone <LINK-DO-REPOSITORIO-TEMPLATE>
+git clone [<LINK-DO-REPOSITORIO-TEMPLATE>](https://github.com/anaclarsy/workshop-build.git)
 cd <NOME-DA-PASTA>
 ```
-
-*(O link será enviado pelo professor.)*
 
 ## Teste final (obrigatório)
 
